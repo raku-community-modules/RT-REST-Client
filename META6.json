@@ -21,5 +21,5 @@
             "lib/RT/REST/Client/Grammar/Actions.pm6"
     },
     "authors"      : [ "Zoffix Znet" ],
-    "support"      : {"source"   : "git://github.com/zoffixznet/perl6-RT-REST-Client.git"}
+    "support"      : {"source"   : "git://github.com/raku-community-modules/RT-REST-Client.git"}
 }
