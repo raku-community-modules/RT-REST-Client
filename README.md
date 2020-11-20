@@ -32,7 +32,7 @@ RT::REST::Client - Use Request Tracker's (RT) REST client interface
 
 # SYNOPSIS
 
-```perl6
+```raku
 
 my RT::REST::Client $rt .= new: :user<rt@example.com> :pass<secr3t>;
 printf "#%s %s %s\n\t%s\n\n",
@@ -48,7 +48,7 @@ needed, upon request.
 # LOGIN CREDENTIALS
 
 You need to go to user preferences and set up your CLI password for your
-credentials to work via REST API. For Perl 6's RT, go to
+credentials to work via REST API. For Raku's RT, go to
 [https://rt.perl.org/User/Prefs.html](https://rt.perl.org/User/Prefs.html)
 and the CLI Password section should be on the right side of the page.
 
@@ -56,7 +56,7 @@ and the CLI Password section should be on the right side of the page.
 
 ## `.new`
 
-```perl6
+```raku
     my RT::REST::Client $rt .= new:
         :user<rt@example.com>
         :pass<secr3t>
@@ -83,7 +83,7 @@ section](#login-credentials) for details.
 
 ## `.search`
 
-```perl6
+```raku
     my @tickets = $rt.search; # all open and new tickets
 
     # detailed search
@@ -137,7 +137,7 @@ but if `:status` is also not specified, the search will operate as if
 The `.search` method returns a list of `RT::REST::Client::Ticket` objects,
 which have the following attributes:
 
-```perl6
+```raku
     my class RT::REST::Client::Ticket {
         has $.id;
         has $.tags;
@@ -170,12 +170,12 @@ The URL of the ticket.
 # REPOSITORY
 
 Fork this module on GitHub:
-https://github.com/zoffixznet/perl6-RT-REST-Client
+https://github.com/raku-community-modules/RT-REST-Client
 
 # BUGS
 
 To report bugs or request features, please use
-https://github.com/zoffixznet/perl6-RT-REST-Client/issues
+https://github.com/raku-community-modules/RT-REST-Client/issues
 
 # AUTHOR
 
